@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- * main - A program that prints a text with the function printf
+ * main - prints "with proper grammar" followed by a new line.
  * return: 0
  */
 int main(void)
