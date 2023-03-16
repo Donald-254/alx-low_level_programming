@@ -1,10 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - prints "with proper grammar" followed by a new line.
- * return: 0
+ * main - main is the entry point.
+ * Return: returns 0 for success
  */
-int main(void)
+int main(void)/*main - returns an interger*/
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
