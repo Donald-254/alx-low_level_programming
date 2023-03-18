@@ -17,7 +17,7 @@ for (i = 0; i < 9; i++)
 		{
 			int num = i * 10 + j;
 			int rev = j * 10 + i;
-			
+
 			if (num != rev)
 			{
 				putchar('0' + i);
@@ -31,5 +31,6 @@ for (i = 0; i < 9; i++)
 		}
 	}
 }
+	putchar('\n');
 return (0);
 }
