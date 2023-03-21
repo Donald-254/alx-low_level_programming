@@ -5,17 +5,16 @@
  */
 int main(void)
 {
-	int n;
+	int n = 0;
 	int sum = 0;
 
-	if (n < 1024)
+	while (n < 1024)
 	{
 		while (n % 3 == 0 || n % 5 == 0)
 		{
 			sum = sum + n;
-			n++;
 		}
-	printf("%d", sum);
+		n++;
 	}
-	return (0);
+	printf("%d", sum);
 }
