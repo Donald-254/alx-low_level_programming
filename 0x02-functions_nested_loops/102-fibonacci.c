@@ -12,10 +12,20 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
-		n = f + s;
-		f = s;
-		s = n;
-		printf("%ld, ", n);
+		if (i < 50)
+		{
+			n = f + s;
+			f = s;
+			s = n;
+			printf("%ld, ", n);
+		}
+		else if (i == 50)
+		{
+			n = f + s;
+			f = s;
+			s = n;
+			printf(",%ld\n", n);
+		}
 	}
-return (0);
+	return (0);
 }
