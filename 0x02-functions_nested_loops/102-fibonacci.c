@@ -12,16 +12,9 @@ int main(void)
 
 	for (i = 1; i < 50; i++)
 	{
-		if (i <= 1)
-		{
-			n = i;
-		}
-		else
-		{
-			n = f + s;
-			f = s;
-			s = n;
-		}
+		n = f + s;
+		f = s;
+		s = n;	
 		printf("%ld, ", n);
 	}
 return (0);
