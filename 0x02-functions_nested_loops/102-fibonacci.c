@@ -6,9 +6,9 @@
 int main(void)
 {
 	int i;
-	long long int f =0;
-	long long int s = 1;
-	long long int n;
+	long int f =0;
+	long int s = 1;
+	long int n;
 
 	for (i = 0; i < 50; i++)
 	{
@@ -22,7 +22,7 @@ int main(void)
 			f = s;
 			s = n;
 		}
-		printf("%lld, ", n);
+		printf("%ld, ", n);
 	}
 return (0);
 }
