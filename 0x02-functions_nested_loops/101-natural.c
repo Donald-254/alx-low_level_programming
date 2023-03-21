@@ -10,11 +10,11 @@ int main(void)
 
 	while (n < 1024)
 	{
-		while (n % 3 == 0 || n % 5 == 0)
+		if (n % 3 == 0 || n % 5 == 0)
 		{
 			sum = sum + n;
 		}
 		n++;
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 }
