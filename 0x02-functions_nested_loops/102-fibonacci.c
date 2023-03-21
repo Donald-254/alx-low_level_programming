@@ -10,11 +10,11 @@ int main(void)
 	long int s = 1;
 	long int n;
 
-	for (i = 1; i < 50; i++)
+	for (i = 1; i <= 50; i++)
 	{
 		n = f + s;
 		f = s;
-		s = n;	
+		s = n;
 		printf("%ld, ", n);
 	}
 return (0);
