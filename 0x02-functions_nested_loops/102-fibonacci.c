@@ -24,7 +24,7 @@ int main(void)
 			n = f + s;
 			f = s;
 			s = n;
-			printf(",%ld\n", n);
+			printf("%ld\n", n);
 		}
 	}
 	return (0);
