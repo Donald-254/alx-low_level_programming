@@ -6,61 +6,16 @@
  */
 void print_number(int n)
 {
-	if (n >= 0)
+	unsigned int i = n;
+
+	if (n < 0)
 	{
-		if (n >= 10 && n <= 99)
-		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-			_putchar('\n');
-		}
-		else if (n >= 100 && n <= 999)
-		{
-			_putchar((n / 100) + '0');
-			_putchar(((n % 100) / 10) + '0');
-			_putchar(((n % 100) % 10) + '0');
-			_putchar('\n');
-		}
-		else if (n >= 1000 && n <= 9999)
-		{
-			_putchar((n / 1000) + '0');
-			_putchar(((n % 1000) / 100) + '0');
-			_putchar((((n % 1000) % 100) / 10) + '0');
-			_putchar((((n % 1000) % 100) % 10) + '0');
-			_putchar('\n');
-		}
-		else
-		{
-			_putchar(n + '0');
-			_putchar('\n');
-		}
+		_putchar(45);
+		i = -i;
 	}
-	else if (n < 0)
+	if (i / 10)
 	{
-		n = -n;
-		if (n >= 10 && n <= 99)
-		{
-		       _putchar('-');
-		       _putchar((n / 10) + '0');
-		       _putchar((n % 10) + '0');
-		       _putchar('\n');
-		}
-		else if (n >= 100 && n <= 999)
-		{
-			_putchar('-');
-			_putchar((n / 100) + '0');
-			_putchar(((n % 100) / 10) + '0');
-			_putchar(((n % 100) % 10) + '0');
-			_putchar('\n');
-		}
-		else if (n >= 1000 && n <= 9999)
-		{
-			_putchar('-');
-			_putchar((n / 1000) + '0');
-			_putchar(((n % 1000) / 100) + '0');
-			_putchar((((n % 1000) % 100) / 10) + '0');
-			_putchar((((n % 1000) % 100) % 10) + '0');
-			_putchar('\n');
-		}
+		print_number(i / 10);
 	}
+	_putchar((i % 10) + '0');
 }
