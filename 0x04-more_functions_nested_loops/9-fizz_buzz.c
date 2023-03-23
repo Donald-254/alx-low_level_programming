@@ -12,7 +12,7 @@ int main(void)
 	{
 		if (i % 3 == 0)
 		{
-			printf("Fuzz ");
+			printf("Fizz ");
 		}
 		else if ((i % 5 == 0) && (i != 100))
 		{
