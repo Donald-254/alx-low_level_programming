@@ -4,7 +4,7 @@
  * @dest: string
  * @src: string
  * Return: success
- */ 
+ */
 char *_strcat(char *dest, char *src)
 {
 	int i = 0;
