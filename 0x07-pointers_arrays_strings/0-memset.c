@@ -4,7 +4,7 @@
  * @s: pointer
  * @b: character
  * @n: memory allocated
- * Return:
+ * Return: return value
  */
 char *_memset(char *s, char b, unsigned int n)
 {
