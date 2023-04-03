@@ -3,7 +3,7 @@
  * _strspn - prefix substring
  * @s: pointer
  * @accept: substring
- * Return: 
+ * Return: success
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -28,4 +28,4 @@ unsigned int _strspn(char *s, char *accept)
 		s++;
 	}
 	return (n);
-}	
+}
