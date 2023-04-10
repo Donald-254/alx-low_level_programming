@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (argv[i] == NULL)
+			if (argv[i] == NULL || argc > 3 || argc < 3)
 			{
 				printf("%s\n", "Error");
 				return (1);
