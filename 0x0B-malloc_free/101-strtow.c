@@ -18,8 +18,8 @@ int count_char(char *s)
 		else if (check == 0)
 		{
 			check = 1;
-			y++;
 		}
+		y++;
 	}
 	return (y);
 }
