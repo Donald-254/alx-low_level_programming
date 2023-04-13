@@ -39,11 +39,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (p = 0; p < m; ++p)
+	for (p = 0; p < m; p++)
 	{
 		str[p] = s1[p];
 	}
-	for (p = 0; p < k; ++p)
+	for (p = 0; p < k; p++)
 	{
 		str[p + m] = s2[p];
 	}
