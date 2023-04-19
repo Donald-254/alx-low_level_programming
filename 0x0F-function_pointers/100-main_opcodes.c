@@ -9,7 +9,8 @@
 int main(int argc, char *argv[])
 {
 	int bytes, index;
-	char *address;
+	int (*address)(int, char **) = main;
+	unsigned char opcode;
 
 	if (argc != 2)
 	{
@@ -22,16 +23,18 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	address = (char *)main;
 	for (index = 0; index < bytes; index++)
 	{
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
 		if (index == bytes - 1)
 		{
-			printf("%02hhx\n", address[index]);
-			break;
+			continue;
 		}
-		printf("%02hhx", address[index]);
+		printf(" ");
+		address++;
 	}
+	printf("\n");
 	return (0);
 }
 
